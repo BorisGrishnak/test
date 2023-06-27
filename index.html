@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Dimas | Beranda</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="js/jquery.min.js"></script>
+  <link rel="icon" href="https://image.similarpng.com/very-thumbnail/2021/09/Coffee-shop-logo-design-template-on-transparent-background-PNG.png">
+</head>
+<body style="background-color: black;">
+
+  <!-- <style>
+    #animate{
+      position: absolute;
+    }
+  </style>
+
+<div class="">
+  <button class="btn btn-primary" onclick="moving()">button</button>
+</div>
+  <div class="" id="animate">
+    <img id="image" src="img/head.png" alt="">
+  </div>
+
+   <script>
+    function moving() 
+    { 
+      var elem = document.getElementById("animate");
+      var pos = 0;
+      var id = setInterval(frame, 5);
+      function frame()
+      { 
+        if(pos == 350)
+        {
+          clearInterval(id);
+        }else{
+          pos++;
+          elem.style.top = pos + "px";
+        }
+      }
+    }
+  </script> -->
+
+  <!-- Floating Button CSS -->
+  <style>
+    #myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: bisque; 
+  color: white; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 30px; 
+  font-size: 18px; 
+}
+
+#myBtn:hover {
+  background-color: #555; 
+}
+</style>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" style="color: black;" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+  </svg>
+</button>
+
+  <header style="background-color: black;">
+    <h1 class="pt-4" style="text-align: center;"><img src="img/head.png" style="width: 20%;" alt=""></h1>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg" style="background-color: black;" data-bs-theme="dark">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#intro">Intro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tentang">Tentang Saya</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Portfolio
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#achievment">Achievement</a></li>
+              <li><a class="dropdown-item" href="#what">What can i do?</a></li>
+              <li><a class="dropdown-item" href="#project">Project</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontak">Kontak Saya</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  </header>
+
+  <!-- Konten -->
+  <div class="container">
+    <div class="row" id="intro">
+      <h1 class="text-center mt-5 mb-3" style="font-family: Merienda; color: bisque;">Selamat Datang</h1>
+      <h4 style="color: bisque; text-align: center;">Pada kesempatan kali ini saya mempersembahkan portfolio tentang siapa saya, apa yang pernah saya kerjakan di bidang IT project-project saya, dan apa saja pencapaian saya</h4>.
+
+      <div class="card mt-5" id="tentang" style="border-color: bisque; border-width: 3px; background-color: black;">
+        <div class="card-body">
+            <div class="row">
+            <div class="col-3">
+              <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/me.jpg" style="width: 20%;" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/me.jpg" style="width: 20%;" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/me.jpg" style="width: 20%;" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div class="col-9">
+              <h1 class="text-center me-5" style="color: bisque;font-family: Merienda;">Tentang Saya</h1>
+              <div class="row mt-4">
+                <div class="col-4">
+                  <h3 style="color: bisque;">Nama:</h3>
+                  <h3 class="mt-4" style="color: bisque;">Nama Panggilan:</h3>
+                  <h3 class="mt-4" style="color: bisque;">Usia:</h3>
+                  <h3 class="mt-4" style="color: bisque;">Asal Sekolah:</h3>
+                  <h3 class="mt-4" style="color: bisque;">Jurusan:</h3>
+                  <h3 class="mt-4" style="color: bisque;">Tempat Tinggal:</h3>
+                  <h3 class="mt-4" style="color: bisque;">Hobi:</h3>
+                </div>
+                <div class="col-8">
+                  <h3 style="color: bisque;">Dimas Aulia Putra</h3>
+                  <h3 class="mt-4" style="color: bisque;">Kratos</h3>
+                  <h3 class="mt-4" style="color: bisque;">19 Tahun</h3>
+                  <h3 class="mt-4" style="color: bisque;">SMK PGRI Wlingi</h3>
+                  <h3 class="mt-4" style="color: bisque;">Rekayasa Perangkat Lunak</h3>
+                  <h3 class="mt-4" style="color: bisque;">Kabupaten Blitar</h3>
+                  <h3 class="mt-4" style="color: bisque;">Coding, olahraga angkat beban, bermain musik, bersepeda motor</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mt-5" style="border-color: bisque; border-width: 3px; background-color: black;">
+        <div class="card-body">
+          <div class="row">
+            <h1 class="text-center mt-3 mb-5" id="achievment" style="font-family: Merienda; color: bisque;">My Achievement</h1>
+            
+            <div id="carachiev" style="width: 70%; margin: auto;" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carachiev" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carachiev" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carachiev" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carachiev" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carachiev" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carachiev" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carachiev" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carachiev" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carachiev" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carachiev" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                <button type="button" data-bs-target="#carachiev" data-bs-slide-to="10" aria-label="Slide 1"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="sert/administrasi.png" style="width: 50px;" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block" style="background-color: black; text-align: start; opacity: 40%; width: 40%;">
+                    <h5 class="card-title ms-2" style="color: linen;">Administrasi Sistem dan Layanan Infrastruktur TI</h5>
+                    <p class="card-text ms-2" style="color: linen;">Aguna Course, Coursera, Google</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="sert/dasaritsupport.png" style="width: 50px;" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block" style="background-color: black; text-align: start; opacity: 40%; width: 40%;">
+                    <h5 class="card-title ms-2" style="color: linen;">Dasar-Dasar Dukungan Teknis</h5>
+                    <p class="card-text ms-2" style="color: linen;">Aguna Course, Coursera, Google</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="sert/jaringan.png" style="width: 50px;" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block" style="background-color: black; text-align: start; opacity: 40%; width: 40%;">
+                    <h5 class="card-title ms-2" style="color: linen;">Seluk Beluk Jaringan Komputer</h5>
+                    <p class="card-text ms-2" style="color: linen;">Aguna Course, Coursera, Google</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="sert/os.png" style="width: 50px;" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block" style="background-color: black; text-align: start; opacity: 40%; width: 40%;">
+                    <h5 class="card-title ms-2" style="color: linen;">Sistem Operasi dan Anda: Menjadi Pengguna yang Berdaya</h5>
+                    <p class="card-text ms-2" style="color: linen;">Aguna Course, Coursera, Google</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="sert/keamananit.png" style="width: 50px;" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block" style="background-color: black; text-align: start; opacity: 40%; width: 40%;">
+                    <h5 class="card-title ms-2" style="color: linen;">Keamanan IT: Pertahanan Terhadap Kejahatan Digital</h5>
+                    <p class="card-text ms-2" style="color: linen;">Aguna Course, Coursera, Google</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="sert/itsupportgoogle.png" style="width: 50px;" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block" style="background-color: black; text-align: start; opacity: 40%; width: 40%;">
+                    <h5 class="card-title ms-2" style="color: linen;">IT Support Google</h5>
+                    <p class="card-text ms-2" style="color: linen;">Aguna Course, Coursera, Google</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="sert/constructgamedev.png" style="width: 50px;" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block" style="background-color: black; text-align: start; opacity: 40%; width: 40%;">
+                    <h5 class="card-title ms-2" style="color: linen;">Game Fundamental: Construct</h5>
+                    <p class="card-text ms-2" style="color: linen;">GameLab</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="sert/jsgamedev.png" style="width: 50px;" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block" style="background-color: black; text-align: start; opacity: 40%; width: 40%;">
+                    <h5 class="card-title ms-2" style="color: linen;">JavaScript Untuk Gamedev</h5>
+                    <p class="card-text ms-2" style="color: linen;">GameLab</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="sert/dart.png" style="width: 50px;" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block" style="background-color: black; text-align: start; opacity: 40%; width: 40%;">
+                    <h5 class="card-title ms-2" style="color: linen;">Memulai Pemrograman dengan Dart</h5>
+                    <p class="card-text ms-2" style="color: linen;">Dicoding</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="sert/magangargia.png" style="width: 50px;" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block" style="background-color: black; text-align: start; opacity: 40%; width: 40%;">
+                    <h5 class="card-title ms-2" style="color: linen;">Sertifikat Magang</h5></p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carachiev" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carachiev" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+              
+          </div>
+        </div>
+      </div>
+
+        <div class="card mt-5" style="border-color: bisque; border-width: 3px; background-color: black;">
+          <div class="card-body">
+            <h1 class="text-center mt-3 mb-5" id="what" style="font-family: Merienda; color: bisque;">What Can I Do?</h1>
+            <div class="row">
+              <div class="col-4">
+                <div class="card" style="background-color: linen;">
+                  <div class="card-body">
+                    <div class="icon" style="text-align: center;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor" style="color: crimson; text-align: center;" class="bi bi-code-slash" viewBox="0 0 16 16">
+                        <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+                      </svg>
+                      <hr>
+                      <h3>Fullstack Web Developer</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card" style="background-color: linen;">
+                  <div class="card-body">
+                    <div class="icon" style="text-align: center;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor" class="bi bi-database" style="color: mediumorchid;" viewBox="0 0 16 16">
+                        <path d="M4.318 2.687C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4c0-.374.356-.875 1.318-1.313ZM13 5.698V7c0 .374-.356.875-1.318 1.313C10.766 8.729 9.464 9 8 9s-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 5.698ZM14 4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13V4Zm-1 4.698V10c0 .374-.356.875-1.318 1.313C10.766 11.729 9.464 12 8 12s-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 8.698Zm0 3V13c0 .374-.356.875-1.318 1.313C10.766 14.729 9.464 15 8 15s-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13s3.022-.289 4.096-.777c.324-.147.633-.323.904-.525Z"/>
+                      </svg>
+                      <hr>
+                      <h3>Database Anatlytics</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card" style="background-color: linen;">
+                  <div class="card-body">
+                    <div class="icon" style="text-align: center;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor" style="color: springgreen;"  class="bi bi-camera-reels-fill" viewBox="0 0 16 16">
+                        <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path d="M9 6a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        <path d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7z"/>
+                      </svg>
+                      <hr>
+                      <h3>Film Maker</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+        
+        <div class="card mt-5" style="border-color: bisque; border-width: 3px; background-color: black;">
+          <div class="card-body">
+            <h1 class="text-center mt-3 mb-5" id="project" style="font-family: Merienda; color: bisque;">Project</h1>
+            <div class="row">
+              <div class="col-6">
+                <div class="card" style="width: 100%; background-color: linen ">
+                  <img src="project/p1.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Aplikasi Kasir</h5>
+                    <p class="card-text">Erau Cell, 2023</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card" style="width: 100%; background-color: linen">
+                  <img src="project/p2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Aplikasi Laporan Konseling</h5>
+                    <p class="card-text">SMK PGRI Wlingi, 2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card mt-5" style="border-color: bisque; border-width: 3px; background-color: black;">
+          <div class="card-body">
+            <h1 class="text-center mt-3 mb-5" id="kontak" style="font-family: Merienda; color: bisque;">Kontak Saya</h1>
+            <div class="row">
+              <div class="col-4">
+                <div class="icon" style="text-align: center;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor" style="color: bisque;" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                  </svg>
+                  <hr style="color: bisque; background-color: bisque; height: 5px;">
+                  <h4 style="color: bisque;">+62 81803434675</h4>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="icon" style="text-align: center;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor" style="color: bisque;" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                  </svg>
+                  <hr style="color: bisque; background-color: bisque; height: 5px;">
+                  <a href="wa.me/081803434675" style="background-color: lime; color: black;" class="btn btn-secondary">Click Me</a>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="icon" style="text-align: center;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor" style="color: bisque;" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                  </svg>
+                  <hr style="color: bisque; background-color: bisque; height: 5px;">
+                  <a href="facebook.com/dimas.sevenfoldis" style="background-color: blue; color: white;" class="btn btn-secondary">Click Me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+  <!-- Floating Button JS -->
+<script>
+  let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.documentElement.scrollTop = 0; 
+}
+</script>
+
+<!-- Footer CSS -->
+
+<style>
+  .footer-basic {
+  padding:40px 0;
+  background-color:black;
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+<div class="footer-basic">
+  <footer>
+      <p class="copyright">Dimas Aulia Putra © 2023</p>
+  </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+<!--  -->
+  <!-- <div class="">
+    <button class="btn btn-primary" onclick="changeImage()">Obah</button>
+  </div>
+
+  <div class="">
+    <img src="img/head.png" id="image" alt="">
+  </div>
+
+<script>
+  var gambar = 0;
+  function changeImage()
+  { 
+    if(gambar == 0) {
+      gambar = 1;
+      document.getElementById("image").src = "img/head.png";
+    }
+    else {
+      gambar = 0;
+      document.getElementById("image").src = "img/me.jpg";
+    }
+  }
+</script> -->
+<!--  -->
+
+  
+</body>
+</html>
